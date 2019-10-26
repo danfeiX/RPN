@@ -1,0 +1,18 @@
+{
+  "net": {
+    "model": "BCSubGoal",
+    "n_in": "eval:meta.object_encode_flat_size",
+    "n_object": "eval:len(meta.object_types)",
+    "n_action": "eval:len(meta.actions)",
+    "symbol_size": "eval:meta.symbolic_state_size",
+    "hidden_dims": [128, 128, 128]
+  },
+  "data": {
+    "collate_cat": false,
+    "loader": "GridPreimageDataset",
+    "dataset": {
+      "ignore_missing": false,
+      "swap_goal": false
+    }
+  }
+}

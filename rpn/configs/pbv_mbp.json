@@ -1,0 +1,16 @@
+{
+  "net": {
+    "model": "VMonoBP",
+    "n_in": "eval:meta.state_size",
+    "n_object": "eval:len(meta.type_indices)",
+    "n_action": "eval:len(meta.action_names)",
+    "symbol_size": "eval:len(meta.predicates)",
+    "im_enc_size" : 32,
+    "hidden_dims": [128, 128, 128]
+  },
+  "data": {
+    "loader": "BulletPreimageVisualDataset",
+    "collate_cat": false,
+    "dataset": {}
+  }
+}

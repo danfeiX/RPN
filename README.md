@@ -1,5 +1,5 @@
 # Regression Planning Networks
-![preview](images/rpn.png)
+![preview](assets/rpn.png)
 
 
 A reference implementation of the [Regression Planning Networks](https://arxiv.org/abs/1909.13072). 
@@ -7,7 +7,7 @@ A reference implementation of the [Regression Planning Networks](https://arxiv.o
 This repo also includes the simulated environments
 used in the paper: GridWorld and Kitchen3D. GridWorld is built on [gym-minigrid](https://github.com/maximecb/gym-minigrid).
 Kitchen3D is simulated with [PyBullet](https://github.com/bulletphysics/bullet3/tree/master/examples/pybullet). Most of the PyBullet utilities are adapted from Caelan Garrett's 
-[ss-pybullet](https://github.com/caelan/ss-pybullet).
+[ss-pybullet](https://github.com/caelan/ss-pybullet). The [Appendix](assets/RPN_Appendix.pdf) of the original paper is also included here for reference.
 
 To cite the code, use bibtex:
 ```
@@ -20,7 +20,9 @@ To cite the code, use bibtex:
 ```
 
 
-![preview](images/preview.gif)
+
+
+![preview](assets/preview.gif)
 ## Installation and Setup
 Requirement: Python >= 3.6
 

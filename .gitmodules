@@ -1,0 +1,6 @@
+[submodule "gym-minigrid"]
+	path = gym-minigrid
+	url = https://github.com/danfeiX/gym-minigrid
+[submodule "third_party/pybullet/utils"]
+	path = third_party/pybullet/utils
+	url = https://github.com/danfeiX/ss-pybullet

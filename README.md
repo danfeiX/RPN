@@ -4,7 +4,7 @@
 
 A reference implementation of the [Regression Planning Networks](https://arxiv.org/abs/1909.13072). 
 
-This repo also includes the implementation of the simulation environments
+This repo also includes the simulated environments
 used in the paper: GridWorld and Kitchen3D. GridWorld is built on [gym-minigrid](https://github.com/maximecb/gym-minigrid).
 Kitchen3D is simulated with [PyBullet](https://github.com/bulletphysics/bullet3/tree/master/examples/pybullet). Most of the PyBullet utilities are adapted from Caelan Garrett's 
 [ss-pybullet](https://github.com/caelan/ss-pybullet).

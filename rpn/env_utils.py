@@ -191,7 +191,7 @@ class World(object):
 
     def load_object(self, path, type_name, fixed=False, n_copy=1, init_pose=None, randomly_place_on=None,
                     color=None, **kwargs):
-        self._calls.append(dict(listitems({'func': self.load_robot}) + listitems(locals())))
+        self._calls.append(dict(listitems({'func': self.load_object}) + listitems(locals())))
         for _ in range(n_copy):
             o = load_model(path, fixed_base=fixed, **kwargs)
             if color is not None:
@@ -199,7 +199,7 @@ class World(object):
             self.add_object(WorldObject(o, type_name, fixed=fixed), init_pose, randomly_place_on)
 
     def create_shape(self, geom, type_name, fixed=False, n_copy=1, init_pose=None, randomly_place_on=None, **kwargs):
-        self._calls.append(dict(listitems({'func': self.load_robot}) + listitems(locals())))
+        self._calls.append(dict(listitems({'func': self.create_shape}) + listitems(locals())))
         for _ in range(n_copy):
             o = SHAPES[geom](**kwargs)
             p.changeVisualShape(o, -1, rgbaColor=kwargs['color'])
